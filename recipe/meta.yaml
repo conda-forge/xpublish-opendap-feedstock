@@ -1,5 +1,5 @@
 {% set name = "xpublish-opendap" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xpublish_opendap-{{ version }}.tar.gz
-  sha256: 76613c2614b878e398b8312532b535673135a0b6f26a88907f788e1e151d082e
+  sha256: 26677c5dd38415bae4d076cfbc92de59b9979d84d6f9fad1bdf86653f5435841
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
